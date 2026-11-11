@@ -1,0 +1,303 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: 78px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    box-sizing: border-box;
+
+    z-index: 9999;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-menu {
+    max-width: 100%;
+}
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+}
+
+.logo-image {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.logo-text {
+    line-height: 1.1;
+}
+
+.logo-text strong {
+    display: block;
+
+    color: #333333;
+
+    font-size: 19px;
+
+    font-weight: 700;
+}
+
+.logo-text span {
+    display: block;
+
+    color: #0d9488;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   MENU
+========================================= */
+
+.nav-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu > li > a {
+    display: block;
+
+    text-decoration: none;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.nav-menu > li > a:hover {
+    color: #0d9488;
+}
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.dropdown > a::after {
+    content: "⌄";
+
+    margin-left: 5px;
+
+    font-size: 11px;
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 20px);
+
+    left: 0;
+
+    min-width: 190px;
+
+    padding: 10px 0;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    display: none;
+
+    z-index: 10000;
+}
+
+.dropdown-menu a {
+    display: block;
+
+    padding: 10px 18px;
+
+    color: #555555;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: #f5fafa;
+
+    color: #0d9488;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-btn {
+    display: inline-block !important;
+
+    padding: 11px 22px;
+
+    background: #e63946;
+
+    color: #ffffff !important;
+
+    border-radius: 6px;
+
+    font-weight: 700 !important;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* =========================================
+   TOMBOL LAPORAN PEGAWAI
+========================================= */
+
+/* Tombol Laporan Pegawai */
+.laporan-pegawai-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 9px 13px;
+    border: 1px solid #d5e8e4;
+    border-radius: 7px;
+
+    background: #f0f8f6;
+    color: #087f75 !important;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    text-decoration: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Efek hover */
+.laporan-pegawai-btn:hover {
+    background: #e2f2ee;
+    border-color: #b8dcd4;
+    color: #075e57 !important;
+}
+
+/* Ikon tombol */
+.laporan-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    line-height: 1;
+}
+
+/* Efek saat tombol dipilih menggunakan keyboard */
+.laporan-pegawai-btn:focus-visible {
+    outline: 2px solid #087f75;
+    outline-offset: 3px;
+}
+
+.login-btn:hover {
+    background: #c92f3b !important;
+
+    color: #ffffff !important;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .nav-menu > li > a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu > li > a {
+        font-size: 12px;
+    }
+
+    .login-btn {
+        padding: 9px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}

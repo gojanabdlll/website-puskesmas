@@ -1,0 +1,344 @@
+/* =====================================
+   FOOTER MODERN PUSKESMAS
+===================================== */
+
+.footer-modern {
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+.footer-modern * {
+    box-sizing: border-box;
+}
+
+.footer-modern-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* BAGIAN ATAS */
+
+.footer-contact {
+    background: #124b78;
+}
+
+.footer-navigation {
+    background: #1769aa;
+}
+
+.footer-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.footer-eyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #ffd6d6;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-contact-info h2 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.footer-contact-desc {
+    max-width: 480px;
+    margin: 0 0 22px;
+    color: #fff1f1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 13px 0;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.7;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.footer-contact-item:hover {
+    color: #ffe0a8;
+}
+
+.footer-icon {
+    flex: 0 0 18px;
+    width: 18px;
+    text-align: center;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 7px 12px;
+    border-radius: 20px;
+}
+
+.footer-socials a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.footer-map {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    background: #f5f5f5;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(60, 0, 0, 0.2);
+}
+
+.footer-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer-map-placeholder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #555;
+    text-align: center;
+}
+
+/* BAGIAN BAWAH */
+
+.footer-contact {
+    background: #124b78;
+}
+
+.footer-navigation {
+    background: #1769aa;
+}
+
+.footer-navigation-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr 1fr;
+    gap: 35px;
+    padding-bottom: 30px;
+}
+
+.footer-brand-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
+}
+
+.footer-brand-heading img {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    object-fit: contain;
+    padding: 3px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.footer-brand-heading h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+.footer-nav-detail {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    margin: 10px 0;
+    color: #fff2f2;
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.footer-nav-detail a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-nav-detail a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-column h3 {
+    margin: 7px 0 17px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.footer-nav-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav-column li {
+    margin: 10px 0;
+    color: #ffeaea;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.footer-nav-column li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-nav-column li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-online-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    min-height: 42px;
+    margin-bottom: 12px;
+    padding: 11px 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.footer-online-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+.footer-online-blue {
+    background: #0879ed;
+}
+
+.footer-online-green {
+    background: #08b96b;
+}
+
+/* COPYRIGHT */
+
+.footer-modern-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 0 20px;
+    border-top: 1px solid rgba(120, 0, 0, 0.45);
+    text-align: center;
+}
+
+.footer-modern-bottom p,
+.footer-modern-bottom small {
+    margin: 0;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .footer-contact-grid {
+        gap: 30px;
+    }
+
+    .footer-navigation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+    }
+}
+
+/* HP */
+
+@media (max-width: 600px) {
+    .footer-modern-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-contact {
+        padding: 35px 0;
+    }
+
+    .footer-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-contact-info h2 {
+        font-size: 27px;
+    }
+
+    .footer-contact-desc {
+        font-size: 13px;
+    }
+
+    .footer-map {
+        height: 240px;
+    }
+
+    .footer-navigation {
+        padding-top: 28px;
+    }
+
+    .footer-navigation-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-bottom: 25px;
+    }
+
+    .footer-nav-column h3 {
+        margin-bottom: 12px;
+    }
+
+    .footer-modern-bottom {
+        flex-direction: column;
+        gap: 5px;
+        padding: 17px 0;
+    }
+}

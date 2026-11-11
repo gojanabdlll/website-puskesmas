@@ -1,0 +1,262 @@
+/* =========================================
+   HALAMAN WILAYAH KERJA PUSKESMAS
+========================================= */
+
+/* AREA KONTEN */
+.detail-page:has(.wilayah-public-grid) {
+    padding: 60px 24px 80px;
+    background: linear-gradient(180deg, #f3f9f9 0%, #ffffff 100%);
+}
+
+.detail-page:has(.wilayah-public-grid) .detail-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* JUDUL HALAMAN */
+.detail-page:has(.wilayah-public-grid) .detail-title {
+    max-width: 760px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.detail-page:has(.wilayah-public-grid) .detail-title > span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #07858a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.detail-page:has(.wilayah-public-grid) .detail-title h2 {
+    margin: 0 0 14px;
+    color: #173b46;
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.detail-page:has(.wilayah-public-grid) .detail-title p {
+    margin: 0;
+    color: #687e85;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* GRID WILAYAH */
+.wilayah-public-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* KARTU WILAYAH */
+.wilayah-public-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 28px 25px;
+    overflow: hidden;
+    border: 1px solid #e0ebed;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(26, 69, 78, 0.05);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* AKSEN ATAS */
+.wilayah-public-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #087f8c, #66c6b4);
+    content: "";
+}
+
+.wilayah-public-card:hover {
+    transform: translateY(-5px);
+    border-color: #b9dfdc;
+    box-shadow: 0 16px 35px rgba(26, 69, 78, 0.11);
+}
+
+/* NOMOR URUT */
+.wilayah-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 22px;
+    border: 1px solid #d1eeea;
+    border-radius: 16px;
+    background: #e8f8f5;
+    color: #087f8c;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* KONTEN KARTU */
+.wilayah-public-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.wilayah-public-content > span {
+    margin-bottom: 7px;
+    color: #07858a;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.wilayah-public-content h3 {
+    margin: 0 0 15px;
+    color: #203c46;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+/* DESA / KELURAHAN */
+.wilayah-desa {
+    margin: 0 0 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #edf1f2;
+    color: #687e85;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.wilayah-desa strong {
+    color: #344f58;
+    font-weight: 700;
+}
+
+/* INFORMASI PENDUDUK DAN LUAS */
+.wilayah-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 13px;
+    padding: 13px 14px;
+    border: 1px solid #e7f0f0;
+    border-radius: 12px;
+    background: #f7fbfb;
+}
+
+.wilayah-info span {
+    color: #71858b;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.wilayah-info strong {
+    color: #087f8c;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* KETERANGAN */
+.wilayah-keterangan {
+    margin: 8px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #edf1f2;
+    color: #687e85;
+    font-size: 13px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+}
+
+/* KONDISI DATA KOSONG */
+.detail-page:has(.wilayah-public-grid) .struktur-empty {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 45px 25px;
+    border: 1px dashed #c9dfe0;
+    border-radius: 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.detail-page:has(.wilayah-public-grid) .struktur-empty-icon {
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+.detail-page:has(.wilayah-public-grid) .struktur-empty h3 {
+    margin-bottom: 12px;
+    color: #203c46;
+    font-size: 22px;
+}
+
+.detail-page:has(.wilayah-public-grid) .struktur-empty p {
+    color: #687e85;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .wilayah-public-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .wilayah-public-card {
+        padding: 25px 22px;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .detail-page:has(.wilayah-public-grid) {
+        padding: 38px 14px 50px;
+    }
+
+    .detail-page:has(.wilayah-public-grid) .detail-title {
+        margin-bottom: 28px;
+    }
+
+    .wilayah-public-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .wilayah-public-card {
+        padding: 23px 20px;
+        border-radius: 16px;
+    }
+
+    .wilayah-number {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 17px;
+        border-radius: 13px;
+        font-size: 18px;
+    }
+
+    .wilayah-public-content h3 {
+        font-size: 19px;
+    }
+
+    .wilayah-desa {
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+    }
+}

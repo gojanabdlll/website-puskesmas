@@ -1,0 +1,574 @@
+/* =========================================================
+   ADMIN LAYOUT
+   PUSKESMAS SINGAPARNA
+========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.admin-body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f8f9;
+    color: #17202a;
+
+    min-height: 100vh;
+}
+
+/* =========================================================
+   WRAPPER
+========================================================= */
+
+.admin-wrapper {
+    display: flex;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.admin-sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 235px;
+
+    background: linear-gradient(180deg, #087f79 0%, #006f69 100%);
+
+    color: #fff;
+
+    padding: 25px 14px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+
+    overflow-y: auto;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.admin-logo {
+    padding: 0 10px 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+    margin-bottom: 20px;
+}
+
+.admin-logo a {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.admin-logo img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.admin-logo-text {
+    line-height: 1.15;
+}
+
+.admin-logo-text strong {
+    display: block;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    letter-spacing: 0.3px;
+}
+
+.admin-logo-text span {
+    display: block;
+
+    margin-top: 5px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+/* =========================================================
+   MENU SECTION
+========================================================= */
+
+.admin-menu-section {
+    margin-bottom: 22px;
+}
+
+.admin-menu-title {
+    display: block;
+
+    padding: 0 12px 10px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.admin-menu-item {
+    position: relative;
+
+    width: 100%;
+
+    min-height: 43px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 5px;
+
+    padding: 0 13px;
+
+    border: 0;
+
+    border-left: 3px solid transparent;
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border 0.25s ease;
+}
+
+.admin-menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+
+    color: #fff;
+}
+
+.admin-menu-item.active {
+    background: rgba(255, 255, 255, 0.15);
+
+    color: #fff;
+
+    border-left-color: #fff;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.menu-icon {
+    width: 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: inherit;
+
+    font-size: 15px;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.menu-badge {
+    margin-left: auto;
+
+    min-width: 19px;
+    height: 19px;
+
+    padding: 0 5px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff3d4f;
+
+    color: #fff;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   LOGOUT
+========================================================= */
+
+.admin-logout {
+    text-align: left;
+}
+
+/* =========================================================
+   SYSTEM MENU
+========================================================= */
+
+.admin-system-menu {
+    margin-top: auto;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.admin-sidebar-bottom {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 15px;
+
+    padding: 17px 10px 5px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.online-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #18e889;
+
+    box-shadow: 0 0 0 4px rgba(24, 232, 137, 0.1);
+}
+
+.admin-sidebar-bottom strong {
+    display: block;
+
+    color: #fff;
+
+    font-size: 10px;
+}
+
+.admin-sidebar-bottom small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    font-size: 8px;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.admin-main {
+    width: calc(100% - 235px);
+
+    min-height: 100vh;
+
+    margin-left: 235px;
+
+    background: #f4f8f9;
+}
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.admin-topbar {
+    position: sticky;
+
+    top: 0;
+
+    height: 70px;
+
+    padding: 0 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #fff;
+
+    border-bottom: 1px solid #e7eeee;
+
+    z-index: 900;
+}
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.admin-page-heading span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #0d9488;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.admin-page-heading h1 {
+    margin: 0;
+
+    color: #20252b;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+}
+
+/* =========================================================
+   ADMIN USER
+========================================================= */
+
+.admin-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.admin-user-avatar {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #0d9488;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.admin-user-info strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 11px;
+}
+
+.admin-user-info small {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #999;
+
+    font-size: 8px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.admin-content {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 32px;
+}
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.admin-alert {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 16px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.admin-alert span {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.admin-alert.success {
+    background: #e9faf4;
+
+    color: #087f79;
+
+    border: 1px solid #c8f0e4;
+}
+
+.admin-alert.success span {
+    background: #0d9488;
+
+    color: #fff;
+}
+
+.admin-alert.error {
+    background: #fff1f2;
+
+    color: #c6283d;
+
+    border: 1px solid #ffd6dc;
+}
+
+.admin-alert.error span {
+    background: #e63946;
+
+    color: #fff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+    .admin-sidebar {
+        width: 210px;
+    }
+
+    .admin-main {
+        width: calc(100% - 210px);
+
+        margin-left: 210px;
+    }
+
+    .admin-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: auto;
+    }
+
+    .admin-wrapper {
+        display: block;
+    }
+
+    .admin-main {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+    .admin-sidebar-bottom {
+        display: none;
+    }
+
+    .admin-system-menu {
+        margin-top: 10px;
+    }
+
+    .admin-topbar {
+        height: 65px;
+
+        padding: 0 18px;
+    }
+
+    .admin-content {
+        padding: 20px 15px;
+    }
+}

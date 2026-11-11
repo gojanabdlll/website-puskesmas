@@ -1,0 +1,101 @@
+/* ==================================================
+   ASSISTANT
+================================================== */
+
+.assistant-container {
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    z-index: 3000;
+}
+
+/* TOMBOL */
+
+.assistant-btn {
+    border: none;
+
+    background: #009fe3;
+
+    color: #ffffff;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* KOTAK */
+
+.assistant-box {
+    position: absolute;
+
+    right: 0;
+
+    bottom: 55px;
+
+    width: 300px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+    display: none;
+}
+
+/* HEADER */
+
+.assistant-header {
+    background: #009fe3;
+
+    color: #ffffff;
+
+    padding: 14px 16px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.assistant-header button {
+    border: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+/* BODY */
+
+.assistant-body {
+    padding: 18px;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.assistant-body p {
+    margin: 0 0 8px;
+}

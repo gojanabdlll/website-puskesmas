@@ -1,0 +1,458 @@
+.admin-page {
+    width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.admin-section-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #009688;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.admin-content-header h2 {
+    margin: 0 0 8px;
+    color: #12202f;
+    font-size: 30px;
+}
+
+.admin-content-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.admin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.admin-btn-primary {
+    background: #009c91;
+    color: #fff;
+}
+
+.admin-btn-primary:hover {
+    background: #008278;
+    transform: translateY(-1px);
+}
+
+.admin-btn-edit {
+    background: #e8f3ff;
+    color: #1671c8;
+}
+
+.admin-btn-edit:hover {
+    background: #d7ebff;
+}
+
+.admin-btn-delete {
+    background: #fff0f0;
+    color: #dc3545;
+}
+
+.admin-btn-delete:hover {
+    background: #ffe0e0;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.admin-card {
+    background: #fff;
+    border: 1px solid #e5ecef;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(20, 50, 60, 0.05);
+}
+
+.admin-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 28px;
+    border-bottom: 1px solid #edf1f3;
+}
+
+.admin-card-header h3 {
+    margin: 0 0 6px;
+    color: #17212b;
+    font-size: 18px;
+}
+
+.admin-card-header p {
+    margin: 0;
+    color: #718096;
+    font-size: 13px;
+}
+
+.admin-count {
+    min-width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5f8f6;
+    color: #009c91;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* =========================
+   BERITA LIST
+========================= */
+
+.berita-admin-list {
+    width: 100%;
+}
+
+.berita-admin-item {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) auto;
+    gap: 22px;
+    align-items: center;
+    padding: 22px 28px;
+    border-bottom: 1px solid #edf1f3;
+}
+
+.berita-admin-item:last-child {
+    border-bottom: 0;
+}
+
+/* FOTO */
+
+.berita-admin-image {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f1f6f7;
+}
+
+.berita-admin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.berita-no-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+/* INFORMASI */
+
+.berita-admin-info {
+    min-width: 0;
+}
+
+.berita-admin-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 7px;
+    color: #78909c;
+    font-size: 11px;
+}
+
+.status-active,
+.status-inactive {
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.status-active {
+    background: #e4f8f1;
+    color: #008c6f;
+}
+
+.status-inactive {
+    background: #f1f1f1;
+    color: #777;
+}
+
+.berita-admin-info h3 {
+    margin: 0 0 7px;
+    color: #17212b;
+    font-size: 17px;
+}
+
+.berita-admin-info p {
+    margin: 0 0 7px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.berita-admin-info small {
+    color: #8a9aa5;
+    font-size: 11px;
+}
+
+/* AKSI */
+
+.berita-admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.berita-admin-actions form {
+    margin: 0;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.admin-empty {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.admin-empty-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7f8f6;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.admin-empty h3 {
+    margin: 0 0 8px;
+    color: #17212b;
+}
+
+.admin-empty p {
+    margin: 0 0 20px;
+    color: #718096;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .berita-admin-item {
+        grid-template-columns: 120px minmax(0, 1fr);
+    }
+
+    .berita-admin-image {
+        width: 120px;
+        height: 85px;
+    }
+
+    .berita-admin-actions {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 650px) {
+    .admin-content-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .admin-content-header h2 {
+        font-size: 25px;
+    }
+
+    .berita-admin-item {
+        grid-template-columns: 1fr;
+    }
+
+    .berita-admin-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .berita-admin-actions {
+        grid-column: auto;
+    }
+}
+
+/* =========================
+   FORM BERITA
+========================= */
+
+.admin-form-card {
+    background: #fff;
+    border: 1px solid #e5ecef;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(20, 50, 60, 0.05);
+}
+
+.admin-form-group {
+    margin-bottom: 22px;
+}
+
+.admin-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #263238;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.admin-form-group label span {
+    color: #e63946;
+}
+
+.admin-form-group input,
+.admin-form-group textarea,
+.admin-form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d7e1e5;
+    border-radius: 9px;
+    background: #fff;
+    color: #263238;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.admin-form-group input {
+    height: 45px;
+}
+
+.admin-form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.admin-form-group select {
+    height: 45px;
+}
+
+.admin-form-group input:focus,
+.admin-form-group textarea:focus,
+.admin-form-group select:focus {
+    border-color: #009c91;
+    box-shadow: 0 0 0 3px rgba(0, 156, 145, 0.08);
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-form-help {
+    display: block;
+    margin-top: 7px;
+    color: #8998a1;
+    font-size: 11px;
+}
+
+.admin-error {
+    display: block;
+    margin-top: 6px;
+    color: #dc3545;
+    font-size: 11px;
+}
+
+.admin-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #edf1f3;
+}
+
+.admin-btn-secondary {
+    background: #eef2f4;
+    color: #52616b;
+}
+
+.admin-btn-secondary:hover {
+    background: #e1e7ea;
+}
+
+/* =========================
+   PREVIEW FOTO
+========================= */
+
+.berita-edit-preview {
+    margin-top: 10px;
+    width: 220px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #e1e8eb;
+}
+
+.berita-edit-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   RESPONSIVE FORM
+========================= */
+
+@media (max-width: 650px) {
+    .admin-form-card {
+        padding: 20px;
+    }
+
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .admin-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .admin-form-actions .admin-btn {
+        width: 100%;
+    }
+}

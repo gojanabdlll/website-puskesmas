@@ -1,0 +1,874 @@
+/* ==========================================
+   PROFIL PUSKESMAS SINGAPARNA
+   Desain modern, responsif, dan rapi
+========================================== */
+
+:root {
+    --profil-primary: #087f72;
+    --profil-primary-dark: #075e54;
+    --profil-accent: #dff5f0;
+    --profil-heading: #173b3b;
+    --profil-text: #596b70;
+    --profil-muted: #7b8c90;
+    --profil-background: #f5f9f9;
+    --profil-border: #e2ecec;
+    --profil-white: #ffffff;
+    --profil-shadow: 0 10px 30px rgba(23, 59, 59, 0.07);
+}
+
+/* RESET KHUSUS HALAMAN PROFIL */
+
+.profil-header,
+.profil-content,
+.profil-info-section,
+.profil-photo-section,
+.profil-visi-misi {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profil-header *,
+.profil-content *,
+.profil-info-section *,
+.profil-photo-section *,
+.profil-visi-misi * {
+    box-sizing: border-box;
+}
+
+.profil-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   1. HEADER PROFIL
+========================================== */
+
+.profil-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 330px;
+    margin-top: 78px;
+    padding: 55px 24px;
+
+    background-color: #164c49;
+    background-image:
+        linear-gradient(120deg, rgba(5, 57, 52, 0.88), rgba(8, 127, 114, 0.63)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: var(--profil-white);
+    overflow: hidden;
+}
+
+.profil-header-overlay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-header-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.profil-header-label {
+    display: inline-block;
+    margin-bottom: 17px;
+    padding: 9px 18px;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-radius: 50px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.profil-header-content h1 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.profil-header-content p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #effcf9;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   2. DESKRIPSI PROFIL
+========================================== */
+
+.profil-content {
+    padding: 65px 0;
+    background: var(--profil-background);
+}
+
+.profil-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+
+    max-width: 100%;
+    padding: 38px 42px;
+
+    background: var(--profil-white);
+    border: 1px solid var(--profil-border);
+    border-radius: 18px;
+    box-shadow: var(--profil-shadow);
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    padding: 8px 13px;
+    color: var(--profil-primary);
+    background: var(--profil-accent);
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.profil-card h2 {
+    margin: 0;
+    color: var(--profil-heading);
+    font-size: clamp(25px, 3vw, 33px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.profil-card > p {
+    max-width: 100%;
+    margin: 0;
+
+    color: var(--profil-text);
+    font-size: 15px;
+    line-height: 2;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+/* ==========================================
+   3. HEADING BAGIAN
+========================================== */
+
+.profil-section-heading {
+    max-width: 760px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.profil-section-heading > span {
+    display: inline-block;
+    margin-bottom: 11px;
+
+    color: var(--profil-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.profil-section-heading h2 {
+    margin: 0 0 13px;
+    color: var(--profil-heading);
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.profil-section-heading > p {
+    margin: 0;
+    color: var(--profil-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   4. INFORMASI KONTAK
+========================================== */
+
+.profil-info-section {
+    padding: 75px 0 80px;
+    background: var(--profil-background);
+}
+
+.profil-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.profil-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+
+    min-width: 0;
+    min-height: 145px;
+    padding: 25px;
+
+    background: var(--profil-white);
+    border: 1px solid var(--profil-border);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(23, 59, 59, 0.035);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.profil-info-card:hover {
+    transform: translateY(-4px);
+    border-color: #a8ded5;
+    box-shadow: var(--profil-shadow);
+}
+
+.profil-info-icon {
+    display: flex;
+    flex: 0 0 48px;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    color: var(--profil-primary);
+    background: var(--profil-accent);
+    border-radius: 13px;
+
+    font-size: 21px;
+}
+
+.profil-info-card > div:last-child {
+    flex: 1;
+    min-width: 0;
+}
+
+.profil-info-card > div:last-child > span {
+    display: block;
+    margin-bottom: 7px;
+
+    color: var(--profil-primary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.profil-info-card h3 {
+    margin: 0 0 10px;
+    color: var(--profil-heading);
+    font-size: 17px;
+    font-weight: 750;
+    line-height: 1.5;
+}
+
+.profil-info-card p {
+    margin: 0;
+
+    color: var(--profil-text);
+    font-size: 13px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.profil-info-card p.profil-preline {
+    white-space: pre-line;
+}
+
+/* ==========================================
+   5. FOTO PUSKESMAS
+========================================== */
+
+.profil-photo-section {
+    padding: 70px 0;
+    background: var(--profil-white);
+}
+
+.profil-photo-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    align-items: stretch;
+    gap: 35px;
+
+    padding: 30px;
+
+    background: var(--profil-background);
+    border: 1px solid var(--profil-border);
+    border-radius: 20px;
+    box-shadow: var(--profil-shadow);
+}
+
+.profil-photo-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 20px 10px;
+}
+
+.profil-photo-content > span {
+    display: inline-block;
+    margin-bottom: 13px;
+
+    color: var(--profil-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.profil-photo-content h2 {
+    margin: 0 0 15px;
+    color: var(--profil-heading);
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.profil-photo-content p {
+    margin: 0;
+    color: var(--profil-text);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.profil-photo {
+    width: 100%;
+    min-width: 0;
+    height: 360px;
+
+    overflow: hidden;
+    background: #eaf2f1;
+    border-radius: 15px;
+}
+
+.profil-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+.profil-photo:hover img {
+    transform: scale(1.035);
+}
+
+/* ==========================================
+   6. VISI DAN MISI
+========================================== */
+
+.profil-visi-misi {
+    padding: 75px 0 85px;
+    background: var(--profil-background);
+}
+
+.visi-misi-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.visi-card,
+.misi-card {
+    position: relative;
+    min-width: 0;
+    padding: 32px;
+
+    background: var(--profil-white);
+    border: 1px solid var(--profil-border);
+    border-radius: 17px;
+    box-shadow: 0 6px 22px rgba(23, 59, 59, 0.045);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.visi-card:hover,
+.misi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--profil-shadow);
+}
+
+.visi-icon,
+.misi-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+    margin-bottom: 21px;
+
+    color: var(--profil-primary);
+    background: var(--profil-accent);
+    border-radius: 15px;
+
+    font-size: 23px;
+}
+
+.visi-card > span,
+.misi-card > span {
+    display: block;
+    margin-bottom: 7px;
+
+    color: var(--profil-primary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.visi-card h3,
+.misi-card h3 {
+    margin: 0 0 14px;
+    color: var(--profil-heading);
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.visi-card p,
+.misi-card p {
+    margin: 0;
+
+    color: var(--profil-text);
+    font-size: 14px;
+    line-height: 1.95;
+    overflow-wrap: anywhere;
+}
+
+.visi-card p.profil-preline,
+.misi-card p.profil-preline {
+    white-space: pre-line;
+}
+
+/* ==========================================
+   7. RESPONSIVE TABLET
+========================================== */
+
+@media (max-width: 900px) {
+    .profil-container {
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+
+    .profil-header {
+        min-height: 290px;
+    }
+
+    .profil-content,
+    .profil-info-section,
+    .profil-photo-section,
+    .profil-visi-misi {
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+
+    .profil-card {
+        padding: 30px;
+    }
+
+    .profil-info-grid {
+        gap: 16px;
+    }
+
+    .profil-info-card {
+        padding: 21px;
+    }
+
+    .profil-photo-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .profil-photo-content {
+        padding: 5px;
+    }
+
+    .profil-photo {
+        height: 340px;
+    }
+}
+
+/* ==========================================
+   8. RESPONSIVE HP
+========================================== */
+
+@media (max-width: 600px) {
+    .profil-container {
+        padding-right: 17px;
+        padding-left: 17px;
+    }
+
+    .profil-header {
+        min-height: 250px;
+        margin-top: 78px;
+        padding: 35px 18px;
+    }
+
+    .profil-header-label {
+        margin-bottom: 13px;
+        padding: 8px 14px;
+        font-size: 10px;
+    }
+
+    .profil-header-content h1 {
+        font-size: 28px;
+    }
+
+    .profil-header-content p {
+        font-size: 13px;
+    }
+
+    .profil-content,
+    .profil-info-section,
+    .profil-photo-section,
+    .profil-visi-misi {
+        padding-top: 42px;
+        padding-bottom: 45px;
+    }
+
+    .profil-card {
+        gap: 15px;
+        padding: 24px 21px;
+        border-radius: 14px;
+    }
+
+    .profil-card h2 {
+        font-size: 24px;
+    }
+
+    .profil-card > p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .profil-section-heading {
+        margin-bottom: 26px;
+    }
+
+    .profil-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .profil-section-heading > p {
+        font-size: 13px;
+    }
+
+    .profil-info-grid,
+    .visi-misi-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .profil-info-card {
+        min-height: 0;
+        gap: 14px;
+        padding: 21px;
+        border-radius: 13px;
+    }
+
+    .profil-info-icon {
+        flex-basis: 43px;
+        width: 43px;
+        height: 43px;
+        font-size: 19px;
+    }
+
+    .profil-info-card h3 {
+        font-size: 16px;
+    }
+
+    .profil-info-card p {
+        font-size: 13px;
+    }
+
+    .profil-photo-card {
+        gap: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .profil-photo-content h2 {
+        font-size: 25px;
+    }
+
+    .profil-photo {
+        height: 245px;
+        border-radius: 12px;
+    }
+
+    .visi-card,
+    .misi-card {
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .visi-card h3,
+    .misi-card h3 {
+        font-size: 20px;
+    }
+
+    .visi-card p,
+    .misi-card p {
+        font-size: 13px;
+    }
+}
+
+/* AKSESIBILITAS */
+
+@media (prefers-reduced-motion: reduce) {
+    .profil-info-card,
+    .visi-card,
+    .misi-card,
+    .profil-photo img {
+        transition: none;
+    }
+
+    .profil-info-card:hover,
+    .visi-card:hover,
+    .misi-card:hover,
+    .profil-photo:hover img {
+        transform: none;
+    }
+}
+
+/* DESKRIPSI PROFIL SESUAI FORMAT ADMIN */
+
+.profil-description-text {
+    color: #596b70;
+    font-size: 15px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.profil-description-text p {
+    margin: 0 0 16px;
+}
+
+.profil-description-text p:last-child {
+    margin-bottom: 0;
+}
+
+.profil-description-text ul,
+.profil-description-text ol {
+    margin: 12px 0 18px;
+    padding-left: 25px;
+}
+
+.profil-description-text li {
+    margin-bottom: 9px;
+    padding-left: 4px;
+    line-height: 1.8;
+}
+
+.profil-description-text h3,
+.profil-description-text h4 {
+    margin: 22px 0 10px;
+    color: #173b3b;
+    line-height: 1.5;
+}
+
+.profil-description-text strong {
+    color: #294b4b;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .profil-description-text {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+}
+
+/* DESKRIPSI + FOTO PUSKESMAS */
+.profil-description-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.85fr);
+    align-items: start;
+    gap: 28px;
+    width: 100%;
+}
+
+.profil-description-text {
+    min-width: 0;
+    color: #52656d;
+    font-size: 15px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.profil-description-image {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #e8f7f5;
+    border: 1px solid #e3ecee;
+    box-shadow: 0 10px 28px rgba(24, 59, 70, 0.09);
+}
+
+.profil-description-image img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.35s ease;
+}
+
+.profil-description-image:hover img {
+    transform: scale(1.03);
+}
+
+.profil-image-placeholder {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    color: #52656d;
+}
+
+.profil-image-placeholder span {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.profil-image-placeholder p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .profil-description-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .profil-description-image img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil-description-image img {
+        height: 230px;
+    }
+}
+
+/* =========================================
+   DESKRIPSI DAN FOTO PUSKESMAS
+========================================= */
+
+.profil-description-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+    align-items: start;
+    gap: 28px;
+    width: 100%;
+}
+
+.profil-description-text {
+    min-width: 0;
+    color: #52656d;
+    font-size: 15px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.profil-description-image {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #e8f7f5;
+    border: 1px solid #e3ecee;
+    box-shadow: 0 10px 28px rgba(24, 59, 70, 0.09);
+}
+
+.profil-description-image img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.35s ease;
+}
+
+.profil-description-image:hover img {
+    transform: scale(1.03);
+}
+
+.profil-image-placeholder {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    color: #52656d;
+}
+
+.profil-image-placeholder span {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.profil-image-placeholder p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Tampilan tablet dan HP */
+@media (max-width: 768px) {
+    .profil-description-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .profil-description-image img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profil-description-image img {
+        height: 230px;
+    }
+}

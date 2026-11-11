@@ -1,0 +1,1285 @@
+/* =========================================================
+   LAPORAN PEGAWAI - PUSKESMAS SINGAPARNA
+   Struktur CSS:
+   1. Variabel dan dasar
+   2. Header
+   3. Area utama dan formulir
+   4. Input formulir
+   5. Notifikasi
+   6. Daftar laporan
+   7. Tombol Lihat dan Unduh (dipisahkan)
+   8. Pratinjau dokumen
+   9. Responsif dan aksesibilitas
+========================================================= */
+
+/* =========================================================
+   1. VARIABEL DAN DASAR
+========================================================= */
+:root {
+    --lp-primary: #087f75;
+    --lp-primary-dark: #075e57;
+    --lp-primary-deep: #044b46;
+    --lp-primary-light: #e7f6f3;
+    --lp-primary-pale: #f2faf8;
+    --lp-heading: #183b3a;
+    --lp-text: #526565;
+    --lp-muted: #829291;
+    --lp-background: #f5f9f8;
+    --lp-border: #e3edeb;
+    --lp-white: #ffffff;
+    --lp-radius: 14px;
+    --lp-shadow: 0 8px 30px rgba(21, 70, 64, 0.07);
+}
+
+.lp-section,
+.lp-section *,
+.lp-section *::before,
+.lp-section *::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+.lp-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 270px;
+    margin-top: 78px;
+    padding: 65px 20px;
+    overflow: hidden;
+    color: var(--lp-white);
+    text-align: center;
+    background:
+        linear-gradient(120deg, rgba(5, 48, 45, 0.88), rgba(8, 127, 117, 0.68)),
+        url("/image/puskesmas-singaparna.jpg") center / cover no-repeat;
+}
+
+.lp-hero-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lp-hero-content > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--lp-white);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.lp-hero h1 {
+    margin: 0 0 12px;
+    color: var(--lp-white);
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.25;
+}
+
+.lp-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   3. AREA UTAMA DAN CONTAINER
+========================================================= */
+.lp-section {
+    width: 100%;
+    padding: 65px 20px 85px;
+    overflow-x: clip;
+    background: var(--lp-background);
+}
+
+.lp-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lp-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.lp-heading > span {
+    color: var(--lp-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.lp-heading h2 {
+    margin: 10px 0;
+    color: var(--lp-heading);
+    font-size: clamp(25px, 3vw, 32px);
+    line-height: 1.35;
+}
+
+.lp-heading p {
+    margin: 0;
+    color: var(--lp-text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   4. KARTU DAN FORMULIR
+========================================================= */
+.lp-form {
+    padding: 32px;
+    border: 1px solid var(--lp-border);
+    border-radius: 18px;
+    background: var(--lp-white);
+    box-shadow: var(--lp-shadow);
+}
+
+.lp-form-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.lp-form-icon {
+    display: flex;
+    flex: 0 0 48px;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d8efea;
+    border-radius: 13px;
+    background: var(--lp-primary-light);
+    font-size: 23px;
+}
+
+.lp-form-title h3 {
+    margin: 0 0 5px;
+    color: var(--lp-heading);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.lp-form-title p {
+    margin: 0;
+    color: var(--lp-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.lp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.lp-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: 9px;
+}
+
+.lp-full {
+    grid-column: 1 / -1;
+}
+
+.lp-field label {
+    color: var(--lp-heading);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.lp-field input,
+.lp-field select {
+    width: 100%;
+    min-height: 46px;
+    padding: 11px 13px;
+    border: 1px solid #dce7e4;
+    border-radius: 8px;
+    outline: none;
+    background: var(--lp-white);
+    color: var(--lp-heading);
+    font: inherit;
+    font-size: 14px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.lp-field input:focus,
+.lp-field select:focus {
+    border-color: var(--lp-primary);
+    box-shadow: 0 0 0 3px rgba(8, 127, 117, 0.11);
+}
+
+.lp-field input[type="file"] {
+    padding: 10px;
+    background: #f8fbfa;
+}
+
+.lp-field small {
+    color: #718087;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.lp-divider {
+    height: 1px;
+    margin: 30px 0;
+    border: 0;
+    background: #e9f0ee;
+}
+
+.lp-note {
+    margin-top: 22px;
+    padding: 15px 16px;
+    border: 1px solid #d8efea;
+    border-radius: 9px;
+    background: var(--lp-primary-pale);
+    color: var(--lp-text);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.lp-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    min-height: 46px;
+    margin-top: 25px;
+    padding: 13px 20px;
+    border: 1px solid var(--lp-primary);
+    border-radius: 9px;
+    background: linear-gradient(135deg, var(--lp-primary), #06685f);
+    color: var(--lp-white);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.lp-submit:hover {
+    background: linear-gradient(
+        135deg,
+        var(--lp-primary-dark),
+        var(--lp-primary-deep)
+    );
+    box-shadow: 0 6px 15px rgba(8, 127, 117, 0.18);
+    transform: translateY(-1px);
+}
+
+/* =========================================================
+   5. NOTIFIKASI
+========================================================= */
+.lp-alert {
+    margin-bottom: 22px;
+    padding: 16px 18px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.lp-success {
+    border-color: #b8e4ce;
+    background: #effaf3;
+    color: #17653a;
+}
+
+.lp-error {
+    border-color: #f2c7c7;
+    background: #fff5f5;
+    color: #a12626;
+}
+
+.lp-error ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+/* =========================================================
+   6. DAFTAR LAPORAN PEGAWAI
+========================================================= */
+.lp-list-section {
+    margin-top: 55px;
+}
+
+.lp-list-heading {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.lp-list-heading > span {
+    color: var(--lp-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.lp-list-heading h2 {
+    margin: 10px 0;
+    color: var(--lp-heading);
+    font-size: clamp(23px, 3vw, 30px);
+    line-height: 1.35;
+}
+
+.lp-list-heading p {
+    margin: 0;
+    color: var(--lp-text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.lp-report-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+    padding: 20px;
+    border: 1px solid var(--lp-border);
+    border-radius: var(--lp-radius);
+    background: var(--lp-white);
+    box-shadow: 0 6px 20px rgba(21, 70, 64, 0.05);
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.lp-report-card:hover {
+    border-color: #c8e5de;
+    box-shadow: 0 10px 26px rgba(21, 70, 64, 0.08);
+}
+
+.lp-report-icon {
+    display: flex;
+    flex: 0 0 52px;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #d8efea;
+    border-radius: 13px;
+    background: var(--lp-primary-light);
+    font-size: 25px;
+}
+
+.lp-report-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.lp-report-info h3 {
+    margin: 0 0 8px;
+    color: var(--lp-heading);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.lp-report-info p {
+    margin: 4px 0;
+    color: var(--lp-text);
+    font-size: 12px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.lp-report-status {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+    padding: 5px 10px;
+    border: 1px solid #f4e2b9;
+    border-radius: 30px;
+    background: #fff5df;
+    color: #946200;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.lp-list-empty {
+    padding: 40px 20px;
+    border: 1px dashed #c9dfda;
+    border-radius: 14px;
+    background: var(--lp-white);
+    text-align: center;
+}
+
+.lp-list-empty > div {
+    margin-bottom: 12px;
+    font-size: 38px;
+}
+
+.lp-list-empty h3 {
+    margin: 0 0 8px;
+    color: var(--lp-heading);
+}
+
+.lp-list-empty p {
+    margin: 0;
+    color: var(--lp-text);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.lp-pagination {
+    margin-top: 25px;
+}
+
+.lp-pagination nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================================================
+   7. TOMBOL LIHAT DAN UNDUH
+   Aturan tombol dipisahkan di bagian ini agar mudah diubah.
+   Ukuran kedua tombol dibuat sama.
+========================================================= */
+.lp-report-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Gaya dasar bersama kedua tombol */
+.lp-report-card .lp-view,
+.lp-report-card .lp-download,
+.lp-report-actions .lp-view,
+.lp-report-actions .lp-download {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 112px;
+    min-width: 112px;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.22s ease;
+}
+
+/* Tombol LIHAT: latar hijau muda dan ikon mata */
+.lp-report-card .lp-view,
+.lp-report-actions .lp-view {
+    color: var(--lp-primary) !important;
+    background: var(--lp-primary-light);
+    border-color: #bce5dc;
+    box-shadow: 0 3px 9px rgba(8, 127, 117, 0.08);
+}
+
+.lp-report-card .lp-view::before,
+.lp-report-actions .lp-view::before {
+    content: "";
+    display: inline-block;
+    flex: 0 0 17px;
+    width: 17px;
+    height: 17px;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+}
+
+/* Tombol UNDUH: latar hijau toska pekat dan ikon unduh */
+.lp-report-card .lp-download,
+.lp-report-actions .lp-download {
+    color: var(--lp-white) !important;
+    background: linear-gradient(135deg, var(--lp-primary), #06685f);
+    border-color: var(--lp-primary);
+    box-shadow: 0 3px 9px rgba(8, 127, 117, 0.12);
+}
+
+.lp-report-card .lp-download::before,
+.lp-report-actions .lp-download::before {
+    content: "";
+    display: inline-block;
+    flex: 0 0 17px;
+    width: 17px;
+    height: 17px;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M12 15V3'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3Cpath d='M12 15V3'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+}
+
+/* Hover tombol LIHAT */
+.lp-report-card .lp-view:hover,
+.lp-report-actions .lp-view:hover {
+    color: var(--lp-white) !important;
+    background: linear-gradient(
+        135deg,
+        var(--lp-primary),
+        var(--lp-primary-dark)
+    );
+    border-color: var(--lp-primary-dark);
+    box-shadow: 0 6px 15px rgba(8, 127, 117, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Hover tombol UNDUH */
+.lp-report-card .lp-download:hover,
+.lp-report-actions .lp-download:hover {
+    color: var(--lp-white) !important;
+    background: linear-gradient(
+        135deg,
+        var(--lp-primary-dark),
+        var(--lp-primary-deep)
+    );
+    border-color: var(--lp-primary-deep);
+    box-shadow: 0 6px 15px rgba(8, 127, 117, 0.2);
+    transform: translateY(-2px);
+}
+
+.lp-report-card .lp-view:focus-visible,
+.lp-report-card .lp-download:focus-visible,
+.lp-report-actions .lp-view:focus-visible,
+.lp-report-actions .lp-download:focus-visible {
+    outline: 3px solid rgba(8, 127, 117, 0.3);
+    outline-offset: 3px;
+}
+
+/* =========================================================
+   8. PRATINJAU DOKUMEN
+========================================================= */
+.lp-report-detail {
+    padding: 18px 20px;
+    border: 1px solid var(--lp-border);
+    border-radius: 10px;
+    background: #fbfdfc;
+}
+
+.lp-report-detail p {
+    margin: 0 0 12px;
+    color: var(--lp-text);
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.lp-report-detail p:last-child {
+    margin-bottom: 0;
+}
+
+.lp-report-detail strong {
+    color: var(--lp-heading);
+}
+
+.lp-preview {
+    margin-top: 30px;
+    padding-top: 24px;
+    border-top: 1px solid var(--lp-border);
+}
+
+.lp-preview h3 {
+    margin: 0 0 18px;
+    color: var(--lp-heading);
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.lp-excel-wrapper {
+    width: 100%;
+    overflow: auto;
+    border: 1px solid var(--lp-border);
+    border-radius: 10px;
+    background: var(--lp-white);
+}
+
+.lp-excel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.lp-excel-table td {
+    min-width: 100px;
+    padding: 10px 12px;
+    border: 1px solid var(--lp-border);
+    color: var(--lp-text);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.lp-excel-table tr:first-child {
+    background: var(--lp-primary-light);
+    font-weight: 700;
+}
+
+.lp-excel-table tr:first-child td {
+    color: var(--lp-primary-dark);
+}
+
+.lp-word-preview {
+    padding: 24px;
+    border: 1px solid var(--lp-border);
+    border-radius: 10px;
+    background: var(--lp-white);
+    color: var(--lp-text);
+    overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   9. RESPONSIF DAN AKSESIBILITAS
+========================================================= */
+@media (max-width: 900px) {
+    .lp-container {
+        max-width: 760px;
+    }
+
+    .lp-report-card {
+        gap: 13px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lp-hero {
+        min-height: 240px;
+        margin-top: 78px;
+        padding: 42px 18px;
+    }
+
+    .lp-hero h1 {
+        font-size: 29px;
+    }
+
+    .lp-hero p {
+        font-size: 13px;
+    }
+
+    .lp-section {
+        padding: 45px 16px 60px;
+    }
+
+    .lp-form {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .lp-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .lp-full {
+        grid-column: auto;
+    }
+
+    .lp-list-section {
+        margin-top: 40px;
+    }
+
+    .lp-report-card {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .lp-report-info {
+        flex: 1 1 calc(100% - 68px);
+    }
+
+    .lp-report-card .lp-view,
+    .lp-report-card .lp-download {
+        width: 112px;
+        min-width: 112px;
+        min-height: 42px;
+        margin-left: 64px;
+    }
+
+    .lp-report-card .lp-download + .lp-view,
+    .lp-report-card .lp-view + .lp-download {
+        margin-left: 0;
+    }
+
+    .lp-report-actions {
+        justify-content: flex-start;
+        gap: 9px;
+    }
+
+    .lp-report-actions .lp-view,
+    .lp-report-actions .lp-download {
+        width: 112px;
+        min-width: 112px;
+        min-height: 42px;
+        padding: 10px 12px;
+    }
+
+    .lp-report-detail {
+        padding: 15px;
+    }
+
+    .lp-preview h3 {
+        font-size: 17px;
+    }
+
+    .lp-word-preview {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lp-submit,
+    .lp-report-card,
+    .lp-report-card .lp-view,
+    .lp-report-card .lp-download,
+    .lp-report-actions .lp-view,
+    .lp-report-actions .lp-download {
+        transition: none;
+    }
+
+    .lp-submit:hover,
+    .lp-report-card .lp-view:hover,
+    .lp-report-card .lp-download:hover,
+    .lp-report-actions .lp-view:hover,
+    .lp-report-actions .lp-download:hover {
+        transform: none;
+    }
+}
+
+/* =====================================================
+   TOMBOL HALAMAN DETAIL LAPORAN
+   Kembali dan Unduh
+===================================================== */
+
+.lp-report-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+/* Gaya dasar kedua tombol */
+.lp-report-actions .lp-view,
+.lp-report-actions .lp-download {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-width: 190px;
+    min-height: 46px;
+    padding: 12px 18px;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    cursor: pointer;
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease,
+        transform 0.22s ease;
+}
+
+/* TOMBOL KEMBALI */
+.lp-report-actions .lp-view {
+    color: #087f75 !important;
+    background: #e7f6f3;
+    border-color: #bce5dc;
+    box-shadow: 0 3px 9px rgba(8, 127, 117, 0.07);
+}
+
+.lp-report-actions .lp-view::before {
+    content: "←";
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+/* Hover tombol kembali */
+.lp-report-actions .lp-view:hover {
+    color: #ffffff !important;
+    background: #087f75;
+    border-color: #087f75;
+    box-shadow: 0 6px 15px rgba(8, 127, 117, 0.18);
+    transform: translateY(-2px);
+}
+
+/* TOMBOL UNDUH */
+.lp-report-actions .lp-download {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #087f75, #06685f);
+    border-color: #087f75;
+    box-shadow: 0 3px 10px rgba(8, 127, 117, 0.13);
+}
+
+.lp-report-actions .lp-download::before {
+    content: "↓";
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Hover tombol unduh */
+.lp-report-actions .lp-download:hover {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #075e57, #044b46);
+    border-color: #044b46;
+    box-shadow: 0 6px 15px rgba(8, 127, 117, 0.22);
+    transform: translateY(-2px);
+}
+
+/* Fokus keyboard */
+.lp-report-actions .lp-view:focus-visible,
+.lp-report-actions .lp-download:focus-visible {
+    outline: 3px solid rgba(8, 127, 117, 0.3);
+    outline-offset: 3px;
+}
+
+/* RESPONSIF HP */
+@media (max-width: 600px) {
+    .lp-report-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .lp-report-actions .lp-view,
+    .lp-report-actions .lp-download {
+        width: 100%;
+        min-width: 0;
+        min-height: 46px;
+    }
+}
+
+/* Aksesibilitas */
+@media (prefers-reduced-motion: reduce) {
+    .lp-report-actions .lp-view,
+    .lp-report-actions .lp-download {
+        transition: none;
+    }
+
+    .lp-report-actions .lp-view:hover,
+    .lp-report-actions .lp-download:hover {
+        transform: none;
+    }
+}
+
+/* Catatan tindak lanjut Admin */
+.lp-admin-feedback {
+    margin-top: 18px;
+    padding: 18px 20px;
+    background: #fff8e8;
+    border: 1px solid #f2d69a;
+    border-left: 4px solid #d99a20;
+    border-radius: 10px;
+}
+
+.lp-admin-feedback h3 {
+    margin: 0 0 10px;
+    color: #805c16;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lp-admin-feedback p {
+    margin: 0;
+    color: #594522;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* =========================================
+   ADMIN - TINDAK LANJUT LAPORAN PEGAWAI
+========================================= */
+
+.lp-admin-edit,
+.lp-admin-edit * {
+    box-sizing: border-box;
+}
+
+.lp-admin-edit {
+    min-height: 80vh;
+    margin-top: 70px;
+    padding: 36px 24px 55px;
+    background: #f3f8f8;
+    color: #183b3a;
+}
+
+.lp-admin-edit-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+.lp-admin-edit-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.lp-admin-edit-icon,
+.lp-admin-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: #e2f5f1;
+    font-size: 25px;
+}
+
+.lp-admin-edit-eyebrow {
+    display: block;
+    margin-bottom: 7px;
+    color: #087f75;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.lp-admin-edit-heading h1 {
+    margin: 0 0 8px;
+    color: #183b3a;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.lp-admin-edit-heading p {
+    margin: 0;
+    color: #647775;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Card */
+.lp-admin-info-card,
+.lp-admin-form-card {
+    margin-bottom: 22px;
+    padding: 26px;
+    border: 1px solid #dcebe8;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 5px 18px rgba(24, 59, 58, 0.04);
+}
+
+.lp-admin-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e7efed;
+}
+
+.lp-admin-card-heading h2 {
+    margin: 0 0 6px;
+    color: #183b3a;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.lp-admin-card-heading p {
+    margin: 0;
+    color: #748582;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.lp-admin-card-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
+}
+
+/* Informasi pegawai */
+.lp-admin-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.lp-admin-info-item {
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #e5efed;
+    border-radius: 10px;
+    background: #fbfdfd;
+}
+
+.lp-admin-info-item > span {
+    display: block;
+    margin-bottom: 7px;
+    color: #71817e;
+    font-size: 12px;
+}
+
+.lp-admin-info-item > strong {
+    display: block;
+    color: #183b3a;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.lp-admin-info-file {
+    grid-column: 1 / -1;
+}
+
+.lp-admin-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.lp-status-pending {
+    color: #075985;
+    background: #e0f2fe;
+}
+
+.lp-status-accepted {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.lp-status-revision {
+    color: #92400e;
+    background: #fef3c7;
+}
+
+/* Form */
+.lp-admin-review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.lp-admin-field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.lp-admin-field label {
+    color: #183b3a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lp-admin-field label span {
+    color: #dc2626;
+}
+
+.lp-admin-field select,
+.lp-admin-field textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 13px 15px;
+    border: 1px solid #cddedb;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #183b3a;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+    box-shadow: none;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.lp-admin-field select {
+    min-height: 48px;
+    cursor: pointer;
+}
+
+.lp-admin-field textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+.lp-admin-field select:focus,
+.lp-admin-field textarea:focus {
+    outline: none;
+    border-color: #087f75;
+    box-shadow: 0 0 0 3px rgba(8, 127, 117, 0.12);
+}
+
+.lp-admin-field small {
+    color: #778782;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Tombol */
+.lp-admin-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid #e7efed;
+}
+
+.lp-admin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 46px;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+.lp-admin-btn:hover {
+    transform: translateY(-1px);
+}
+
+.lp-admin-btn-back {
+    border-color: #cddedb;
+    background: #ffffff;
+    color: #087f75 !important;
+}
+
+.lp-admin-btn-back:hover {
+    background: #e7f6f3;
+}
+
+.lp-admin-btn-save {
+    background: #087f75;
+    color: #ffffff;
+}
+
+.lp-admin-btn-save:hover {
+    background: #06685f;
+}
+
+/* Validasi */
+.lp-admin-alert {
+    margin-bottom: 20px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.lp-admin-alert-error {
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+}
+
+.lp-admin-alert ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+
+/* Responsif */
+@media (max-width: 640px) {
+    .lp-admin-edit {
+        padding: 25px 14px 35px;
+    }
+
+    .lp-admin-edit-heading h1 {
+        font-size: 23px;
+    }
+
+    .lp-admin-info-card,
+    .lp-admin-form-card {
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .lp-admin-info-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .lp-admin-info-file {
+        grid-column: auto;
+    }
+
+    .lp-admin-form-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .lp-admin-btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lp-admin-btn,
+    .lp-admin-field select,
+    .lp-admin-field textarea {
+        transition: none;
+    }
+}

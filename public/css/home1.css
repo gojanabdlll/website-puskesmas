@@ -1,0 +1,2111 @@
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+
+    margin-top: 78px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+
+    line-height: 1.3;
+
+    margin-bottom: 18px;
+}
+
+.hero-content p {
+    font-size: 15px;
+
+    margin-bottom: 28px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #ff1f3d;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #d91831;
+
+    transform: translateY(-2px);
+}
+
+/* DOTS */
+
+.hero-dots {
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 8px;
+
+    z-index: 2;
+}
+
+.hero-dots span {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    opacity: 0.5;
+}
+
+.hero-dots span.active {
+    opacity: 1;
+}
+
+/* ==================================================
+   SECTION GLOBAL
+================================================== */
+
+.section-title {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-title span {
+    color: #0d9488;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+
+    margin: 8px 0 12px;
+
+    color: #333;
+}
+
+.section-title p {
+    color: #777;
+
+    font-size: 15px;
+}
+
+/* ==================================================
+   LAYANAN
+================================================== */
+
+.layanan {
+    padding: 90px 8%;
+
+    background: #ffffff;
+}
+
+.layanan-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.layanan-card {
+    background: #ffffff;
+
+    padding: 30px 25px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.layanan-icon {
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #e6f7f5;
+
+    color: #0d9488;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.layanan-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.layanan-card p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+/* ==================================================
+   INFORMASI
+================================================== */
+
+.informasi {
+    padding: 90px 8%;
+
+    background: #f5f7f8;
+}
+
+.informasi-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.informasi-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.informasi-image {
+    height: 190px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.informasi-content {
+    padding: 25px;
+}
+
+.informasi-content small {
+    color: #0d9488;
+
+    font-weight: bold;
+}
+
+.informasi-content h3 {
+    margin: 8px 0;
+
+    font-size: 19px;
+}
+
+.informasi-content p {
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.informasi-content a {
+    color: #0d9488;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+/* ==================================================
+   GALERI
+================================================== */
+
+.galeri {
+    padding: 90px 8%;
+
+    background: white;
+}
+
+.galeri-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.galeri-item {
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.galeri-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.galeri-item:hover img {
+    transform: scale(1.08);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+    .layanan-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .informasi-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeri-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .layanan-container,
+    .informasi-container,
+    .galeri-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ==================================================
+   HOME
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #ffffff;
+}
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: calc(100vh - 78px);
+
+    margin-top: 78px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    max-width: 800px;
+
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #e63946;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #c92f3b;
+
+    transform: translateY(-2px);
+}
+
+/* ==================================================
+   LAYANAN
+================================================== */
+
+.layanan {
+    padding: 80px 8%;
+
+    background: #ffffff;
+}
+
+.section-header {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.section-header span {
+    color: #0d9488;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    margin-top: 10px;
+
+    margin-bottom: 12px;
+
+    font-size: 32px;
+
+    color: #333;
+}
+
+.section-header p {
+    color: #777;
+
+    line-height: 1.7;
+}
+
+.layanan-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.layanan-card {
+    padding: 30px 25px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.layanan-card h3 {
+    margin: 15px 0 10px;
+
+    font-size: 19px;
+
+    color: #333;
+}
+
+.layanan-card p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+/* ==================================================
+   INFORMASI
+================================================== */
+
+.informasi {
+    padding: 80px 8%;
+
+    background: #f7fafb;
+}
+
+.informasi-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.informasi-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.informasi-card img {
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.informasi-card-content {
+    padding: 22px;
+}
+
+.informasi-card-content h3 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.informasi-card-content p {
+    color: #777;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+/* ==================================================
+   GALERI
+================================================== */
+
+.galeri {
+    padding: 80px 8%;
+
+    background: #ffffff;
+}
+
+.galeri-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.galeri-item {
+    height: 220px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.galeri-item img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.galeri-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+    .layanan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .informasi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .layanan-grid,
+    .informasi-grid,
+    .galeri-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================================================
+   PELAYANAN
+================================================== */
+
+/* =========================================
+   SECTION PELAYANAN
+========================================= */
+
+.layanan-section {
+    width: 100%;
+    padding: 80px 6%;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.layanan-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.layanan-label {
+    display: block;
+    color: #009688;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.layanan-header h2 {
+    margin: 0 0 10px;
+    color: #222;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.layanan-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* =========================================
+   CONTAINER 5 KARTU SEJAJAR
+========================================= */
+
+.layanan-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+
+    /* 5 kartu dalam satu baris */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.layanan-card {
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+    border: 1px solid #e8eeee;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+.layanan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   FOTO LAYANAN
+========================================= */
+
+.layanan-image {
+    width: 100%;
+    height: 180px;
+
+    background: #f5fafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.layanan-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+.layanan-card:hover .layanan-image img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   ISI CARD
+========================================= */
+
+.layanan-content {
+    padding: 20px 18px 22px;
+    text-align: center;
+}
+
+.layanan-content h3 {
+    margin: 0 0 10px;
+
+    color: #009688;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.layanan-content p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+/* Laptop */
+@media (max-width: 1100px) {
+    .layanan-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .layanan-section {
+        padding: 60px 25px;
+    }
+
+    .layanan-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .layanan-image {
+        height: 170px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .layanan-section {
+        padding: 50px 18px;
+    }
+
+    .layanan-header h2 {
+        font-size: 25px;
+    }
+
+    .layanan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .layanan-image {
+        height: 200px;
+    }
+}
+
+/* =====================================
+   HERO BANNER DINAMIS
+===================================== */
+
+.hero-dynamic {
+    position: relative;
+    min-height: 480px;
+    height: 65vh;
+    max-height: 680px;
+    overflow: hidden;
+    background: #064e3b;
+}
+
+.hero-dynamic .hero-slides,
+.hero-dynamic .hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-dynamic .hero-slide {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.7s ease,
+        visibility 0.7s ease;
+}
+
+.hero-dynamic .hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.hero-dynamic .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 35, 25, 0.82),
+        rgba(0, 35, 25, 0.35)
+    );
+    z-index: 0;
+}
+
+.hero-dynamic .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 7%;
+    color: #fff;
+}
+
+.hero-dynamic .hero-content h1 {
+    max-width: 800px;
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: clamp(30px, 4vw, 52px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-dynamic .hero-content p {
+    max-width: 650px;
+    margin: 0 0 28px;
+    color: #fff;
+    font-size: clamp(15px, 1.7vw, 19px);
+    line-height: 1.8;
+}
+
+.hero-dynamic .hero-button {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 8px;
+    background: #0d9468;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.2s ease;
+}
+
+.hero-dynamic .hero-button:hover {
+    background: #087f5b;
+}
+
+.hero-dynamic .hero-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    color: #064e3b;
+    cursor: pointer;
+}
+
+.hero-dynamic .hero-prev {
+    left: 20px;
+}
+
+.hero-dynamic .hero-next {
+    right: 20px;
+}
+
+.hero-dynamic .hero-dots {
+    position: absolute;
+    z-index: 5;
+    bottom: 24px;
+    left: 50%;
+    display: flex;
+    gap: 9px;
+    transform: translateX(-50%);
+}
+
+.hero-dynamic .hero-dot {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.hero-dynamic .hero-dot.active {
+    width: 28px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .hero-dynamic {
+        min-height: 420px;
+        height: 60vh;
+    }
+
+    .hero-dynamic .hero-content {
+        padding: 35px 55px;
+    }
+
+    .hero-dynamic .hero-prev {
+        left: 10px;
+    }
+
+    .hero-dynamic .hero-next {
+        right: 10px;
+    }
+
+    .hero-dynamic .hero-arrow {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.informasi-image {
+    height: 190px;
+    overflow: hidden;
+    background: #e8f4f1;
+}
+
+.informasi-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.informasi-kosong {
+    padding: 24px;
+    color: #64748b;
+}
+
+/* =========================================
+   HERO BANNER - PUSKESMAS SINGAPARNA
+   ========================================= */
+
+.hero.hero-dynamic {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #075e57;
+}
+
+.hero-dynamic .hero-slides {
+    position: relative;
+    width: 100%;
+}
+
+.hero-dynamic .hero-slide {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 520px;
+    padding: 70px 24px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-dynamic .hero-slide.active {
+    display: flex;
+}
+
+/* Lapisan gelap agar teks mudah dibaca */
+.hero-dynamic .hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 43, 37, 0.78) 0%,
+        rgba(0, 43, 37, 0.48) 55%,
+        rgba(0, 43, 37, 0.28) 100%
+    );
+}
+
+/* Konten berada tepat di tengah */
+.hero-dynamic .hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Judul utama */
+.hero-dynamic .hero-content h1 {
+    max-width: 800px;
+    margin: 0 auto 20px;
+
+    color: #ffffff;
+    font-size: clamp(32px, 4.2vw, 54px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+
+    text-align: center;
+    overflow-wrap: break-word;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Deskripsi banner */
+.hero-dynamic .hero-content p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+/* Tombol banner */
+.hero-dynamic .hero-content .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    margin: 0 auto;
+    padding: 12px 26px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+
+    background: #078f75;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.12);
+    transition:
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.hero-dynamic .hero-content .hero-button:hover {
+    background: #06745f;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+}
+
+/* Tombol navigasi banner */
+.hero-dynamic .hero-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+
+    background: rgba(0, 50, 44, 0.4);
+    color: #ffffff;
+
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: background 0.2s ease;
+}
+
+.hero-dynamic .hero-arrow:hover {
+    background: rgba(0, 50, 44, 0.8);
+}
+
+.hero-dynamic .hero-prev {
+    left: 24px;
+}
+
+.hero-dynamic .hero-next {
+    right: 24px;
+}
+
+/* Indikator slide */
+.hero-dynamic .hero-dots {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-dynamic .hero-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+
+    cursor: pointer;
+    transition:
+        width 0.2s ease,
+        background 0.2s ease;
+}
+
+.hero-dynamic .hero-dot.active {
+    width: 24px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .hero-dynamic .hero-slide {
+        min-height: 450px;
+        padding: 60px 55px;
+    }
+
+    .hero-dynamic .hero-content h1 {
+        font-size: clamp(29px, 5.5vw, 40px);
+        margin-bottom: 16px;
+    }
+
+    .hero-dynamic .hero-content p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero-dynamic .hero-prev {
+        left: 10px;
+    }
+
+    .hero-dynamic .hero-next {
+        right: 10px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .hero-dynamic .hero-slide {
+        min-height: 400px;
+        padding: 48px 30px;
+        background-position: center center;
+    }
+
+    .hero-dynamic .hero-content h1 {
+        font-size: 29px;
+        line-height: 1.25;
+    }
+
+    .hero-dynamic .hero-content p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .hero-dynamic .hero-content .hero-button {
+        min-height: 42px;
+        padding: 10px 22px;
+        font-size: 12px;
+    }
+
+    .hero-dynamic .hero-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-dynamic .hero-content .hero-button,
+    .hero-dynamic .hero-arrow,
+    .hero-dynamic .hero-dot {
+        transition: none;
+    }
+}
+
+/* =========================================
+   PELAYANAN BERDASARKAN KLASTER
+========================================= */
+
+.layanan-klaster-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.layanan-klaster-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 28px 24px;
+    background: #ffffff;
+    border: 1px solid #e1eeeb;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(15, 80, 70, 0.05);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.layanan-klaster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(15, 80, 70, 0.11);
+}
+
+.klaster-nomor {
+    align-self: flex-start;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: #e7f6f3;
+    color: #087f75;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.klaster-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 22px 0 16px;
+    border-radius: 16px;
+    background: #f0f9f7;
+    font-size: 30px;
+}
+
+.layanan-klaster-card .layanan-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.layanan-klaster-card .layanan-content h3 {
+    margin: 0 0 12px;
+    color: #183b3a;
+    font-size: 19px;
+    line-height: 1.45;
+}
+
+.layanan-klaster-card .layanan-content p {
+    margin: 0 0 22px;
+    color: #617371;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.klaster-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-top: auto;
+    padding: 11px 15px;
+    border: 1px solid #cce8e2;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #087f75 !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.klaster-button:hover {
+    background: #087f75;
+    color: #ffffff !important;
+}
+
+@media (max-width: 992px) {
+    .layanan-klaster-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .layanan-klaster-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .layanan-klaster-card {
+        padding: 22px;
+    }
+
+    .layanan-klaster-card .layanan-content h3 {
+        font-size: 18px;
+    }
+}
+
+/* ========================================
+   LAYANAN PENGADUAN BERANDA
+======================================== */
+
+.home-pengaduan-section {
+    padding: 70px 24px;
+    background: #f3f8f7;
+}
+
+.home-pengaduan-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 50px;
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: center;
+    gap: 45px;
+    background: #ffffff;
+    border: 1px solid #e0eeeb;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(18, 70, 65, 0.06);
+}
+
+.home-pengaduan-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #078477;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-pengaduan-content h2 {
+    margin: 0 0 18px;
+    color: #183b3a;
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.home-pengaduan-content h2 span {
+    display: block;
+    color: #078477;
+}
+
+.home-pengaduan-content p {
+    max-width: 650px;
+    margin: 0;
+    color: #61716f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.home-pengaduan-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.home-pengaduan-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 13px 20px;
+    border: 1px solid #087f75;
+    border-radius: 9px;
+    background: #087f75;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.home-pengaduan-button:hover {
+    background: #06665e;
+    transform: translateY(-2px);
+}
+
+.home-pengaduan-button span {
+    font-size: 18px;
+}
+
+.home-pengaduan-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #71817f;
+    font-size: 12px;
+}
+
+.home-pengaduan-note span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e2f7ef;
+    color: #078477;
+    font-weight: 800;
+}
+
+.home-pengaduan-illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.home-pengaduan-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #d0eee7;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e8f8f4, #d8f1ec);
+}
+
+.home-pengaduan-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 105px;
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(8, 127, 117, 0.12);
+    font-size: 48px;
+}
+
+.home-pengaduan-check {
+    position: absolute;
+    right: 3px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: #078477;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.home-pengaduan-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 22px;
+}
+
+.home-pengaduan-caption strong {
+    color: #183b3a;
+    font-size: 16px;
+}
+
+.home-pengaduan-caption span {
+    color: #71817f;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .home-pengaduan-section {
+        padding: 40px 16px;
+    }
+
+    .home-pengaduan-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 24px;
+        border-radius: 16px;
+    }
+
+    .home-pengaduan-illustration {
+        padding: 10px 0;
+    }
+
+    .home-pengaduan-circle {
+        width: 145px;
+        height: 145px;
+    }
+
+    .home-pengaduan-icon {
+        width: 85px;
+        height: 85px;
+        font-size: 40px;
+    }
+
+    .home-pengaduan-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-pengaduan-container {
+        padding: 25px 18px;
+    }
+
+    .home-pengaduan-button {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   PROFIL PUSKESMAS DI HALAMAN BERANDA
+======================================== */
+
+.home-profil-section {
+    padding: 70px 24px;
+    background: #ffffff;
+}
+
+.home-profil-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.home-profil-image {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #e7f3f0;
+    box-shadow: 0 12px 30px rgba(24, 59, 58, 0.1);
+}
+
+.home-profil-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-profil-content {
+    min-width: 0;
+}
+
+.home-profil-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #078477;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-profil-content h2 {
+    margin: 0 0 18px;
+    color: #183b3a;
+    font-size: clamp(27px, 3vw, 38px);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.home-profil-content h2 span {
+    display: block;
+    color: #087f75;
+}
+
+.home-profil-content p {
+    margin: 0;
+    color: #61716f;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.home-profil-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 12px 18px;
+    border: 1px solid #087f75;
+    border-radius: 8px;
+    background: #087f75;
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.home-profil-button:hover {
+    background: #06665e;
+    transform: translateY(-2px);
+}
+
+.home-profil-button span {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .home-profil-section {
+        padding: 45px 18px;
+    }
+
+    .home-profil-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .home-profil-image {
+        height: 260px;
+    }
+
+    .home-profil-content h2 {
+        font-size: 28px;
+    }
+
+    .home-profil-content p {
+        font-size: 14px;
+    }
+}
+
+/* ========================================
+   PENGUMUMAN TERBARU - BERANDA
+======================================== */
+
+.home-pengumuman-section {
+    padding: 65px 24px;
+    background: #f3f8f7;
+}
+
+.home-pengumuman-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-pengumuman-heading {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.home-pengumuman-heading > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #078477;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-pengumuman-heading h2 {
+    margin: 0 0 12px;
+    color: #183b3a;
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.home-pengumuman-heading p {
+    margin: 0;
+    color: #61716f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-pengumuman-empty {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 35px 25px;
+    border: 1px solid #e0eeeb;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(24, 59, 58, 0.05);
+}
+
+.home-pengumuman-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 18px;
+    border-radius: 18px;
+    background: #e3f6f2;
+    font-size: 30px;
+}
+
+.home-pengumuman-empty h3 {
+    margin: 0 0 10px;
+    color: #183b3a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.home-pengumuman-empty p {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #61716f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.home-pengumuman-empty a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 22px;
+    padding: 11px 17px;
+    border: 1px solid #087f75;
+    border-radius: 8px;
+    color: #087f75;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.home-pengumuman-empty a:hover {
+    background: #087f75;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .home-pengumuman-section {
+        padding: 45px 16px;
+    }
+
+    .home-pengumuman-empty {
+        padding: 28px 18px;
+    }
+}
+
+.home-pengumuman-section {
+    width: 100%;
+    padding: 65px 24px;
+    background: #f3f8f7;
+    box-sizing: border-box;
+}
+
+.home-pengumuman-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-pengumuman-heading {
+    max-width: 760px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.home-pengumuman-empty {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 210px;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    border: 1px solid #e0eeeb;
+    border-radius: 16px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(24, 59, 58, 0.05);
+}
+
+@media (max-width: 600px) {
+    .home-pengumuman-section {
+        padding: 45px 16px;
+    }
+
+    .home-pengumuman-empty {
+        min-height: auto;
+        padding: 28px 18px;
+    }
+}
+
+/* =========================================
+   PENGUMUMAN DI HALAMAN HOME
+========================================= */
+
+.pengumuman-container {
+    width: min(100% - 40px, 1200px);
+    margin: 32px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.pengumuman-card {
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e1eeeb;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(24, 59, 58, 0.06);
+    padding: 18px;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.pengumuman-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(24, 59, 58, 0.11);
+}
+
+.pengumuman-foto {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #e7f6f3;
+}
+
+.pengumuman-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pengumuman-label {
+    align-self: flex-start;
+    display: inline-flex;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #e7f6f3;
+    color: #087f75;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pengumuman-card h3 {
+    margin: 0 0 10px;
+    color: #183b3a;
+    font-size: 19px;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.pengumuman-meta {
+    margin: 0 0 12px;
+    color: #788987;
+    font-size: 12px;
+}
+
+.pengumuman-card > p {
+    margin: 0 0 14px;
+    color: #526565;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pengumuman-detail {
+    margin-top: auto;
+    padding-top: 12px;
+    color: #087f75;
+    font-size: 13px;
+}
+
+.pengumuman-detail summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.pengumuman-isi {
+    padding-top: 12px;
+    color: #526565;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.pengumuman-kosong {
+    grid-column: 1 / -1;
+    padding: 36px 24px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e1eeeb;
+    border-radius: 16px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .pengumuman-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .pengumuman-foto {
+        height: 180px;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    .pengumuman-container {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .pengumuman-card {
+        padding: 14px;
+    }
+
+    .pengumuman-foto {
+        height: 210px;
+    }
+
+    .pengumuman-card h3 {
+        font-size: 17px;
+    }
+}

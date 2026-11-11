@@ -1,0 +1,430 @@
+/* ================================
+   HEADER GALERI
+================================ */
+
+/* =========================================
+   HEADER GALERI - DISESUAIKAN DENGAN PELAYANAN
+========================================= */
+
+.galeri-hero {
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+
+    margin-top: 78px;
+    padding: 0 20px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #ffffff;
+
+    box-sizing: border-box;
+}
+
+.galeri-hero-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+/* LABEL HEADER GALERI */
+.galeri-hero-content span {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    min-height: 34px;
+    margin: 0 auto 12px;
+    padding: 7px 16px;
+
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 30px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* POSISI DAN JARAK HEADER */
+
+/* HEADER GALERI */
+.galeri-hero {
+    background:
+        linear-gradient(120deg, rgba(5, 48, 45, 0.84), rgba(8, 127, 117, 0.68)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* AREA GALERI */
+.galeri-public-section {
+    background: #f5f9f8;
+}
+
+/* LABEL JUDUL BAGIAN */
+.galeri-public-heading > span {
+    color: #087f75;
+}
+
+/* JUDUL BAGIAN */
+.galeri-public-heading h2 {
+    color: #183b3a;
+}
+
+/* DESKRIPSI BAGIAN */
+.galeri-public-heading p {
+    color: #526565;
+}
+
+/* KARTU FOTO */
+.galeri-public-card {
+    border-color: #e3edeb;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(21, 70, 64, 0.07);
+}
+
+/* EFEK HOVER KARTU */
+.galeri-public-card:hover {
+    box-shadow: 0 16px 36px rgba(21, 70, 64, 0.12);
+}
+
+/* LATAR FOTO */
+.galeri-public-image {
+    background: #e7f6f3;
+}
+
+/* OVERLAY FOTO */
+.galeri-image-overlay {
+    background: rgba(8, 127, 117, 0.72);
+}
+
+/* TANGGAL FOTO */
+.galeri-public-date {
+    color: #087f75;
+}
+
+/* JUDUL KARTU */
+.galeri-public-info h3 {
+    color: #183b3a;
+}
+
+/* DESKRIPSI KARTU */
+.galeri-public-info p {
+    color: #526565;
+}
+
+/* KONDISI GALERI KOSONG */
+.galeri-public-empty {
+    border-color: #e3edeb;
+    background: #ffffff;
+}
+
+.galeri-public-empty-icon {
+    background: #e7f6f3;
+}
+
+.galeri-public-empty h3 {
+    color: #183b3a;
+}
+
+.galeri-public-empty p,
+.galeri-empty {
+    color: #526565;
+}
+
+/* TOMBOL GALERI */
+.galeri-home-button {
+    background: #087f75;
+    color: #ffffff;
+}
+
+.galeri-home-button:hover {
+    background: #075e57;
+    color: #ffffff;
+}
+
+/* ================================
+   AREA GALERI
+================================ */
+
+.galeri-public-section {
+    padding: 65px 24px 85px;
+    background: #f5f8f9;
+}
+
+.galeri-public-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.galeri-public-heading {
+    max-width: 750px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.galeri-public-heading > span {
+    display: block;
+    margin-bottom: 10px;
+    color: #009688;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.galeri-public-heading h2 {
+    margin: 0 0 12px;
+    color: #182b34;
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.galeri-public-heading p {
+    margin: 0;
+    color: #718087;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ================================
+   GRID DAN KARTU FOTO
+================================ */
+
+.galeri-public-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.galeri-public-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #e8eeee;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(22, 50, 60, 0.05);
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+.galeri-public-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(22, 50, 60, 0.1);
+}
+
+.galeri-public-image {
+    position: relative;
+    display: block;
+    height: 245px;
+    overflow: hidden;
+    background: #eaf1f2;
+}
+
+.galeri-public-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.35s;
+}
+
+.galeri-public-card:hover .galeri-public-image img {
+    transform: scale(1.05);
+}
+
+.galeri-image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 100, 91, 0.58);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.galeri-public-card:hover .galeri-image-overlay,
+.galeri-public-image:focus-visible .galeri-image-overlay {
+    opacity: 1;
+}
+
+/* ================================
+   INFORMASI FOTO
+================================ */
+
+.galeri-public-info {
+    padding: 21px;
+}
+
+.galeri-public-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: #008f82;
+    font-size: 12px;
+}
+
+.galeri-public-info h3 {
+    margin: 0 0 10px;
+    color: #182b34;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.galeri-public-info p {
+    margin: 0;
+    color: #718087;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* ================================
+   KONDISI GALERI KOSONG
+================================ */
+
+.galeri-public-empty {
+    padding: 65px 25px;
+    border: 1px solid #e5eeee;
+    border-radius: 16px;
+    background: #fff;
+    text-align: center;
+}
+
+.galeri-public-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #e4f8f5;
+    font-size: 35px;
+}
+
+.galeri-public-empty h3 {
+    margin: 0 0 10px;
+    color: #182b34;
+    font-size: 22px;
+}
+
+.galeri-public-empty p {
+    margin: 0 auto;
+    max-width: 500px;
+    color: #718087;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Tombol menuju halaman Galeri */
+.galeri-home-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.galeri-home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 11px 22px;
+    border-radius: 8px;
+    background: #087f75;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.galeri-home-button:hover {
+    background: #075e57;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.galeri-empty {
+    grid-column: 1 / -1;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    color: #718087;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+    .galeri-public-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .galeri-public-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeri-hero {
+        min-height: 250px;
+        margin-top: 78px;
+        padding: 35px 18px;
+    }
+
+    .galeri-hero-content h1 {
+        font-size: 27px;
+    }
+
+    .galeri-hero-content p {
+        font-size: 13px;
+    }
+
+    .galeri-public-section {
+        padding: 45px 16px 60px;
+    }
+
+    .galeri-public-heading h2 {
+        font-size: 24px;
+    }
+
+    .galeri-public-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .galeri-public-image {
+        height: 240px;
+    }
+}

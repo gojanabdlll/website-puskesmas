@@ -1,0 +1,617 @@
+/* =========================================================
+   PROMKES - PUSKESMAS SINGAPARNA
+   Desain modern, bersih, profesional, dan responsif
+========================================================= */
+
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --promkes-primary: #087f75;
+    --promkes-primary-dark: #075e57;
+    --promkes-primary-light: #e7f6f3;
+    --promkes-heading: #183b3a;
+    --promkes-text: #526565;
+    --promkes-muted: #829291;
+    --promkes-background: #f5f9f8;
+    --promkes-border: #e3edeb;
+    --promkes-white: #ffffff;
+    --promkes-radius: 18px;
+    --promkes-shadow: 0 8px 30px rgba(21, 70, 64, 0.07);
+}
+
+/* =========================================================
+   HEADER HALAMAN
+========================================================= */
+
+.page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+    margin-top: 78px;
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(120deg, rgba(5, 48, 45, 0.84), rgba(8, 127, 117, 0.62)),
+        url("/image/puskesmas-singaparna.jpg");
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    color: var(--promkes-white);
+}
+
+/* LABEL PROMOSI KESEHATAN */
+
+/* =========================================================
+   HEADER KHUSUS HALAMAN PROMKES
+   Tidak memengaruhi header halaman lain
+========================================================= */
+
+.promkes-page-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 290px;
+    margin-top: 78px;
+    padding: 55px 24px;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        linear-gradient(120deg, rgba(5, 48, 45, 0.88), rgba(8, 127, 117, 0.68)),
+        url("/image/puskesmas-singaparna.jpg") center / cover no-repeat;
+    text-align: center;
+}
+
+.promkes-page-header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.promkes-header-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+}
+
+.promkes-page-header-content h1 {
+    margin: 0 0 14px;
+    color: #ffffff;
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.promkes-page-header-content p {
+    max-width: 620px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.94);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* HEADER PROMKES PADA HP */
+@media (max-width: 600px) {
+    .promkes-page-header {
+        min-height: 245px;
+        margin-top: 78px;
+        padding: 40px 18px;
+    }
+
+    .promkes-page-header-content h1 {
+        font-size: 30px;
+    }
+
+    .promkes-page-header-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .promkes-header-label {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+}
+
+/* =========================================================
+   AREA UTAMA
+========================================================= */
+
+.promkes-page {
+    width: 100%;
+    padding: 76px 24px 90px;
+    overflow-x: clip;
+    background: var(--promkes-background);
+}
+
+.promkes-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   PENGANTAR PROMKES
+========================================================= */
+
+.promkes-intro {
+    max-width: 790px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.promkes-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: var(--promkes-primary-light);
+    color: var(--promkes-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.promkes-intro h2 {
+    margin: 0 0 17px;
+    color: var(--promkes-heading);
+    font-size: clamp(25px, 3vw, 35px);
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: -0.5px;
+}
+
+.promkes-intro p {
+    margin: 0;
+    color: var(--promkes-text);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   GRID KONTEN
+========================================================= */
+
+.promkes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 26px;
+    width: 100%;
+}
+
+/* =========================================================
+   KARTU PROMKES
+========================================================= */
+
+.promkes-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid var(--promkes-border);
+    border-radius: var(--promkes-radius);
+    background: var(--promkes-white);
+    box-shadow: var(--promkes-shadow);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.promkes-card:hover {
+    transform: translateY(-5px);
+    border-color: #c5e4dd;
+    box-shadow: 0 16px 36px rgba(21, 70, 64, 0.12);
+}
+
+/* FOTO KONTEN DINAMIS */
+
+.promkes-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #eaf3f1;
+}
+
+.promkes-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.promkes-card:hover .promkes-image img {
+    transform: scale(1.04);
+}
+
+/* IKON UNTUK KARTU TANPA FOTO */
+
+.promkes-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    margin: 24px 24px 0;
+    border: 1px solid #d8efea;
+    border-radius: 16px;
+    background: var(--promkes-primary-light);
+    color: var(--promkes-primary);
+    font-size: 30px;
+}
+
+/* =========================================================
+   ISI KARTU
+========================================================= */
+
+.promkes-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 23px 24px 25px;
+}
+
+.promkes-content > span {
+    display: inline-block;
+    margin-bottom: 11px;
+    color: var(--promkes-primary);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+.promkes-content h3 {
+    margin: 0 0 12px;
+    color: var(--promkes-heading);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.promkes-content p {
+    margin: 0 0 15px;
+    color: var(--promkes-text);
+    font-size: 13px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.promkes-date,
+.promkes-author {
+    display: block;
+    margin: 0 0 12px;
+    color: var(--promkes-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.promkes-author {
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid #edf2f0;
+}
+
+/* DAFTAR EDUKASI PADA KARTU STATIS */
+
+.promkes-content ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.promkes-content li {
+    position: relative;
+    margin: 0 0 10px;
+    padding-left: 25px;
+    color: var(--promkes-text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.promkes-content li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: var(--promkes-primary-light);
+    color: var(--promkes-primary);
+    content: "✓";
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   KONDISI KONTEN KOSONG
+========================================================= */
+
+.promkes-empty {
+    grid-column: 1 / -1;
+    padding: 45px 24px;
+    border: 1px dashed #c9dfda;
+    border-radius: var(--promkes-radius);
+    background: var(--promkes-white);
+    text-align: center;
+}
+
+.promkes-empty .promkes-icon {
+    margin: 0 auto 18px;
+}
+
+.promkes-empty h3 {
+    margin: 0 0 10px;
+    color: var(--promkes-heading);
+    font-size: 21px;
+}
+
+.promkes-empty p {
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--promkes-text);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   AJAKAN HIDUP SEHAT
+========================================================= */
+
+.promkes-callout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    width: 100%;
+    margin-top: 54px;
+    padding: 38px 42px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 22px;
+    background: linear-gradient(120deg, #075e57 0%, #087f75 55%, #119b89 100%);
+    box-shadow: 0 15px 35px rgba(8, 127, 117, 0.17);
+}
+
+.promkes-callout::after {
+    position: absolute;
+    top: -85px;
+    right: -55px;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+    content: "";
+    pointer-events: none;
+}
+
+.callout-icon {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 76px;
+    height: 76px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.13);
+    color: #fff;
+    font-size: 34px;
+}
+
+.callout-content {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.callout-content span {
+    display: block;
+    margin-bottom: 9px;
+    color: #c8f5e9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.callout-content h2 {
+    margin: 0 0 12px;
+    color: #fff;
+    font-size: clamp(21px, 2.5vw, 28px);
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.callout-content p {
+    max-width: 780px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+    .promkes-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .promkes-image {
+        height: 215px;
+    }
+
+    .promkes-page {
+        padding: 65px 22px 75px;
+    }
+}
+
+/* =========================================================
+   HP
+========================================================= */
+
+@media (max-width: 600px) {
+    .page-header {
+        min-height: 245px;
+        margin-top: 78px;
+        padding: 40px 18px;
+    }
+
+    .page-header-content h1 {
+        font-size: 30px;
+    }
+
+    .page-header-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .page-header-content span {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .promkes-page {
+        padding: 48px 16px 60px;
+    }
+
+    .promkes-intro {
+        margin-bottom: 30px;
+    }
+
+    .promkes-intro h2 {
+        font-size: 25px;
+    }
+
+    .promkes-intro p {
+        font-size: 13px;
+        line-height: 1.9;
+    }
+
+    .promkes-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 19px;
+    }
+
+    .promkes-card {
+        border-radius: 15px;
+    }
+
+    .promkes-image {
+        height: 225px;
+    }
+
+    .promkes-icon {
+        width: 56px;
+        height: 56px;
+        margin: 20px 20px 0;
+        font-size: 27px;
+    }
+
+    .promkes-content {
+        padding: 20px;
+    }
+
+    .promkes-content h3 {
+        font-size: 19px;
+    }
+
+    .promkes-content p {
+        font-size: 13px;
+    }
+
+    .promkes-callout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 35px;
+        padding: 27px 22px;
+        border-radius: 17px;
+    }
+
+    .callout-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+        font-size: 28px;
+    }
+
+    .callout-content h2 {
+        font-size: 22px;
+    }
+
+    .callout-content p {
+        font-size: 13px;
+    }
+}
+
+/* =========================================================
+   AKSESIBILITAS
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .promkes-card,
+    .promkes-image img {
+        transition: none;
+    }
+
+    .promkes-card:hover {
+        transform: none;
+    }
+}
